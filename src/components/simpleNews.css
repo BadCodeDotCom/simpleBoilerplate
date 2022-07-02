@@ -1,0 +1,13 @@
+.simple-news-item {
+    margin: 1rem 0;
+    background: crimson;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    color: white;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    text-align: center;
+}
+.news-generator-form {
+    text-align: center;
+    color: crimson;
+}
