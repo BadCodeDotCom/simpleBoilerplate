@@ -1,17 +1,28 @@
 import './simpleNews.css';
 
 const SimpleNews = () => {
-    return <div className="simple-news-item">
-        <input type="text"/>
-        <div>
-        <button>
-            Search news
-        </button>
-        </div>
-        <h2>Latest news</h2>
-    </div>
-    
 
+    const dateNews = new Date(2022, 7, 3);
+
+    return (
+        <div className="center">
+        <div className="simple-news-item">
+            <div className="latest-news-form">
+            <h2>Latest news</h2>
+            <div>{dateNews.toISOString()}</div>
+            </div>
+            <div className="input">
+            <input type="text"/>
+            <div/>
+                <div className="button">
+                <button className="button">
+                    Search news
+                </button>
+                </div>
+            </div>
+    </div>
+        </div>
+    );
 }
 
 export default SimpleNews;
